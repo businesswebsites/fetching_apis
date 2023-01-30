@@ -9,19 +9,40 @@ h1{
 }
 #uni{
     font-size: 50px;
-    width: 200px;
-    height: 80px;
-    padding: 2px;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    background-color: #010a01;
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #fe1352,
+                0 0 0.8rem #fe1352,
+                0 0 2.8rem #fe1352,
+                inset 0 0 1.3rem #fe1352;
 }
 
 #posi{
     font-size: 50px;
-    height: 80px;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
+
+    background-color: #010a01;
+    color: white;
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #fe1352,
+                0 0 0.8rem #fe1352,
+                0 0 2.8rem #fe1352,
+                inset 0 0 1.3rem #fe1352;
 }
 
 #btn{
@@ -40,11 +61,24 @@ input{
     font-size: 50px;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #010a01;
+    color: white;
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #fe1352,
+                0 0 0.8rem #fe1352,
+                0 0 2.8rem #fe1352,
+                inset 0 0 1.3rem #fe1352;
 }
 
 #root{
     display: flex;
     justify-content: center;
+    gap: 1%;
 }
 
 #universities{
@@ -52,4 +86,52 @@ input{
     margin: 40px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #fe1352,
+      0 0 82px #fe1352,
+      0 0 92px #fe1352,
+      0 0 102px #fe1352,
+      0 0 151px #fe1352;
+  }
+
+
+@keyframes pulsate{
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #fe1352,
+        0 0 80px #fe1352,
+        0 0 90px #fe1352,
+        0 0 100px #fe1352,
+        0 0 150px #fe1352;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #fe1352,
+      0 0 45px #fe1352,
+      0 0 55px #fe1352,
+      0 0 70px #fe1352,
+      0 0 80px #fe1352;
+    }
+  
+}
+button:hover{
+    cursor: pointer;
 }

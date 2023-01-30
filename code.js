@@ -38,3 +38,7 @@ function fetchAPI(){
         })
     .catch(err => console.log("Request failed", err));
 }
+
+function del_val(){
+    universities.innerHTML = "";
+}

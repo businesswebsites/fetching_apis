@@ -13,7 +13,7 @@
         <h1>Geografische Lage des Nutzers angeben</h1>
     </div>
     <div id="btn">
-        <button id="posi" onclick="getLocation()">Position lokalisieren</button>
+        <button class="neonText" id="posi" onclick="getLocation()">Position lokalisieren</button>
         <div id="user_stats">
 
         </div>
@@ -21,8 +21,9 @@
 
     <h1>Universitäten in deinem Land herausfinden</h1>
     <div id="root">
-        <input placeholder="Type in your country" type="text" name="" id="country">
-        <button id="uni" onclick="fetchAPI()" >GO!</button>
+        <input class="neonText" placeholder="Type in your country" type="text" name="" id="country">
+        <button class="neonText" id="uni" onclick="fetchAPI()" >GO!</button>
+        <button class="neonText" onclick="del_val()" id="uni">Delete!</button>
     </div>
     <div id="universities">
             

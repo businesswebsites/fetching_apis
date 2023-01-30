@@ -7,7 +7,7 @@ h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
-#uni{
+#uni, #guess_name_btn, #delete_name_btn{
     font-size: 50px;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
@@ -75,13 +75,13 @@ input{
                 inset 0 0 1.3rem #fe1352;
 }
 
-#root{
+#root, #guess_name{
     display: flex;
     justify-content: center;
     gap: 1%;
 }
 
-#universities{
+#universities, #nationality{
     text-align: center;
     margin: 40px;
     font-family: 'Courier New', Courier, monospace;

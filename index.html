@@ -7,6 +7,7 @@
     <title>API Training</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    
 </head>
 <body>
     <div>
@@ -27,6 +28,15 @@
     </div>
     <div id="universities">
             
+    </div>
+    <h1>Predict nationality by name</h1>
+    <div id="guess_name">
+        <input class="neonText" placeholder="Type a name" type="text" name="" id="name">
+        <button class="neonText" id="guess_name_btn" onclick="guess_nationality()" >GO!</button>
+        <button class="neonText" onclick="del_erg()" id="delete_name_btn">Delete!</button>
+    </div>
+    <div id="nationality">
+
     </div>
     <script src="code.js"></script>
 </body>

@@ -14,7 +14,7 @@ function showPosition(position){
 
 
 //API here
-
+//fetch universities data
 let universities = document.getElementById("universities")
 async function fetchData(){
     let country = document.getElementById("country").value;
@@ -42,3 +42,25 @@ function fetchAPI(){
 function del_val(){
     universities.innerHTML = "";
 }
+
+//fetch predict nationality api
+let nationality = document.getElementById("nationality");
+function guess_nationality(){
+    let name = document.getElementById("name").value;
+    fetch("https://api.nationalize.io?name="+name.toString())
+    .then(response => response.json())
+    .then(json =>
+        {
+            for(let i = 0; i<json.country.length; i++){
+                nationality.innerHTML = nationality.innerHTML + json.country[i].country_id + "<br>";
+            }
+            //console.log(json.country[0].country_id)  
+            //universities.innerHTML = new_arr;
+        })
+    .catch(err => console.log("Request failed", err));
+}
+
+function del_erg(){
+    nationality.innerHTML = "";
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1>Geografische Lage des Nutzers angeben</h1>
+    </div>
+    <div id="btn">
+        <button id="posi" onclick="getLocation()">Position lokalisieren</button>
+        <div id="user_stats">
+
+        </div>
+    </div>
+
+    <h1>Universitäten in deinem Land herausfinden</h1>
+    <div id="root">
+        <input placeholder="Type in your country" type="text" name="" id="country">
+        <button id="uni" onclick="fetchAPI()" >GO!</button>
+    </div>
+    <div id="universities">
+            
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>

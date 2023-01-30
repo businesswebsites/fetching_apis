@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#uni{
+    font-size: 50px;
+    width: 200px;
+    height: 80px;
+    padding: 2px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#posi{
+    font-size: 50px;
+    height: 80px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+#user_stats{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+input{
+    margin: 10px;
+    font-size: 50px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+#universities{
+    text-align: center;
+    margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
